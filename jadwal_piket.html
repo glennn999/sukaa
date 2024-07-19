@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jadwal Piket - UNESCO</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: background-color(to right,#BDE0FE, #A2D2FF); /* Gradient background */
+            color: #fff; /* White text color for better contrast */
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #dcdcdd; /* Semi-transparent black background */
+            padding: 10px 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #111011;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .menu-toggle {
+            display: none;
+            cursor: pointer;
+        }
+        .menu-toggle .bar {
+            display: block;
+            width: 25px;
+            height: 3px;
+            margin: 5px auto;
+            background-color: rgb(232, 228, 228);
+        }
+        .piket-section {
+            background-color: rgba(222, 6, 6, 0.2); /* Semi-transparent white background */
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .piket-table {
+            width: 100%;
+            border-collapse: collapse;
+            color: #000; /* Black text color for table */
+        }
+        .piket-table th, .piket-table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        .piket-table th {
+            background: linear-gradient(to right, #00463e, #2a4e8c); /* Gradient background */
+        }
+        .piket-table td {
+            background: linear-gradient(to right, #0779e4, #2575fc); /* Gradient background */
+        }
+            @media (max-width: 768px) {
+            nav ul {
+                display: none;
+                text-align: center;
+            }
+            nav ul.active {
+                display: block;
+            }
+            .menu-toggle {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>UNESCO</h1>
+            <nav>
+                <ul id="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="roster.html">Roster Pelajaran</a></li>
+                    <li><a href="jadwal_piket.html">Jadwal Piket</a></li>
+                    <li><a href="Galery.html">Galery</a></li>
+                </ul>
+                <div class="menu-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="piket-section">
+            <h2>Jadwal Piket</h2>
+            <table class="piket-table">
+                <thead>
+                    <tr>
+                        <th>Hari</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Senin</td>
+                        <td>Enrico Yaurent</td>
+                        <td>Syahdan Ibnu Khalis</td>
+                        <td>Cynthia Devi Gotama</td>
+                        <td>Cheverly Vamiel Jennifer</td>
+                        <td>Lavinia Luk</td>
+                    </tr>
+                    <tr>
+                        <td>Selasa</td>
+                        <td>Steven</td>
+                        <td>Valentino Darma Tandiono</td>
+                        <td>Syahira Fitria Br. Hutapea</td>
+                        <td>Velisia Harsono</td>
+                        <td>Abel Liya Putri</td>
+                    </tr>
+                    <tr>
+                        <td>Rabu</td>
+                        <td>Erick Huang</td>
+                        <td>Bun Kalvin Wijaya</td>
+                        <td>Jesslyn Juliarso</td>
+                        <td>Kezya Laqueenta Tanner</td>
+                        <td>Ricvany Endi Khe</td>
+                    </tr>
+                    <tr>
+                        <td>Kamis</td>
+                        <td>Glenn Austyn</td>
+                        <td>Nico Alvando</td>
+                        <td>Plora Arika</td>
+                        <td>Nadia Keysia Alhamdana S</td>
+                        <td>Stevanie Clarence</td>
+                    </tr>
+                    <tr>
+                        <td>Jumat</td>
+                        <td>Heinz Pradhana Luviady</td>
+                        <td>Freanderlyn Wijaya</td>
+                        <td>Khalisya Khairani Pohan</td>
+                        <td>Florencia Linksy Natawijaya</td>
+                        <td>Fery Salim</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <script>
+        document.getElementById("mobile-menu").addEventListener("click", function() {
+            var navLinks = document.getElementById("nav-links");
+            navLinks.classList.toggle("active");
+        });
+    </script>
+</body>
+</html>
